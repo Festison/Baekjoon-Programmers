@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "백준 단계별 문제풀기 1. 입출력과 사칙연산", "백준 단계별 문제풀기 1. 입출력과 사칙연산\백준 단계별 문제풀기 1. 입출력과 사칙연산.vcxproj", "{050F116F-E6AF-46F7-8219-D351B355E021}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{050F116F-E6AF-46F7-8219-D351B355E021}.Debug|x64.ActiveCfg = Debug|x64
+		{050F116F-E6AF-46F7-8219-D351B355E021}.Debug|x64.Build.0 = Debug|x64
+		{050F116F-E6AF-46F7-8219-D351B355E021}.Debug|x86.ActiveCfg = Debug|Win32
+		{050F116F-E6AF-46F7-8219-D351B355E021}.Debug|x86.Build.0 = Debug|Win32
+		{050F116F-E6AF-46F7-8219-D351B355E021}.Release|x64.ActiveCfg = Release|x64
+		{050F116F-E6AF-46F7-8219-D351B355E021}.Release|x64.Build.0 = Release|x64
+		{050F116F-E6AF-46F7-8219-D351B355E021}.Release|x86.ActiveCfg = Release|Win32
+		{050F116F-E6AF-46F7-8219-D351B355E021}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ADE5A69-6CBC-4106-A94D-F1540AB3E542}
+	EndGlobalSection
+EndGlobal
