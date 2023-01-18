@@ -9,6 +9,7 @@ int solution(int n)
     for(int i=1; ;i++) 
     {
         num *= i;
+        
         if(num > n) 
         {
             return i-1;
