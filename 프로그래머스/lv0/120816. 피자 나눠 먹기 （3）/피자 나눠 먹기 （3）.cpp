@@ -15,7 +15,6 @@ int solution(int slice, int n)
     {
         answer=n/slice+1;
     }
-
-    
+ 
     return answer;
 }
