@@ -6,31 +6,31 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// 문자열을 특정 구분자(delimiter)로 잘라서 vector<string>으로 반환하는 함수
+// 문자열을 구분자(delimiter) 기준으로 잘라서 vector<string>으로 반환
 vector<string> Split(string& input, string delimiter)
 {
-    auto start = 0;                          // 잘라낼 문자열의 시작 인덱스
-    auto end = input.find(delimiter);        // 구분자가 처음 나타나는 위치
+    auto start = 0;                           // 잘라낼 문자열의 시작 위치
+    auto end = input.find(delimiter);         // 첫 번째 구분자의 위치 찾기
 
-    vector<string> result;                   // 잘린 문자열들을 담을 벡터
+    vector<string> result;                    // 잘라낸 문자열을 저장할 벡터
 
     // 구분자가 발견될 때까지 반복
     while (end != string::npos)
     {
-        // start ~ end-1 까지의 문자열을 잘라서 결과에 추가
+        // [start, end) 구간의 문자열을 잘라서 벡터에 추가
         result.push_back(input.substr(start, end - start));
 
-        // 다음 구간의 시작 인덱스를 갱신
+        // start 위치를 구분자 뒤로 이동
         start = end + delimiter.size();
 
-        // 다음 구분자 위치 탐색
+        // 다음 구분자의 위치 탐색
         end = input.find(delimiter, start);
     }
 
-    // 마지막 구분자 이후의 남은 문자열도 추가
+    // 마지막 구분자 이후의 문자열도 벡터에 추가
     result.push_back(input.substr(start));
-
-    return result;  // 잘린 문자열 벡터 반환
+    
+    return result;  // 모든 결과를 반환
 }
 
 int main()
@@ -40,10 +40,11 @@ int main()
     // ", " (쉼표 + 공백)을 기준으로 문자열 분리
     vector<string> fruits = Split(str, ", ");
 
-    // 확인용 출력
+    // 결과 출력
     for (auto& fruit : fruits)
     {
         cout << fruit << "\n";
     }
 }
+
 ```
