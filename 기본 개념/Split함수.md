@@ -1,8 +1,8 @@
 # 개념
 - C++ 은 Split 함수를 만들어야 한다.
 
-#코드
-
+# 코드
+```
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -46,4 +46,4 @@ int main()
         cout << fruit << "\n";
     }
 }
-'''
+```
